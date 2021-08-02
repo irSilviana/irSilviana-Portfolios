@@ -3,6 +3,10 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
+:root {
+  --primary: #e35073;
+}
+
 body {
   margin: 0 auto;
 }
@@ -10,19 +14,23 @@ body {
 h1 {
   color: #000000;
   font-family: "Karla", sans-serif;
-  font-size: 64px;
+  font-size: 62px;
   font-weight: 400;
   line-height: 80px;
   text-align: center;
   letter-spacing: -0.015em;
-  margin-top: 30px;
+  margin: 0;
+}
+
+.hero h1 {
+  margin-top: 35px;
 }
 
 h2 {
   color: #000000;
   font-family: "Nunito", sans-serif;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 58px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -59,7 +67,8 @@ span.text-logo {
 }
 
 .hero {
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .hero .img-fluid {
@@ -82,11 +91,17 @@ span.text-logo {
   font-weight: 500;
   font-size: 17px;
   line-height: 21px;
-  background: #e35073;
+  background: var(--primary);
   padding: 12px 25px;
   margin: 20px 20px;
   color: white;
   text-decoration: none;
+  transition: 500ms all ease-in-out;
+}
+
+.primary-button:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 @media (min-width: 992px) {
