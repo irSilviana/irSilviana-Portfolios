@@ -5,6 +5,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 :root {
   --primary: #e35073;
+  --primary-background: #faeff1;
 }
 
 body {
@@ -67,8 +68,8 @@ span.text-logo {
 }
 
 .hero {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .hero .img-fluid {
@@ -102,6 +103,31 @@ span.text-logo {
 .primary-button:hover {
   color: white;
   transform: scale(1.1);
+}
+
+.services {
+  background: var(--primary-background);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.line-breaker {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 130px;
+}
+
+.features {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  h3,
+  h3.text-end,
+  p,
+  p.text-end {
+    text-align: center !important;
+  }
 }
 
 @media (min-width: 992px) {
