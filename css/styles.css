@@ -6,6 +6,7 @@ font-family: 'Ubuntu', sans-serif; */
 :root {
   --primary: #e35073;
   --primary-background: #faeff1;
+  --dark-font: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -13,13 +14,18 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+p {
+  color: var(--dark-font);
+}
+
 h1 {
-  color: #000000;
   font-family: "Karla", sans-serif;
   font-size: 62px;
   font-weight: 400;
   line-height: 80px;
-  text-align: center;
   letter-spacing: -0.015em;
   margin: 0;
 }
@@ -29,16 +35,15 @@ h1 {
 }
 
 h2 {
-  color: #000000;
   font-family: "Nunito", sans-serif;
   font-weight: normal;
   font-size: 28px;
   line-height: 58px;
-  text-align: center;
   letter-spacing: 0.1em;
 }
 
 span.text-logo {
+  color: var(--dark-font);
   position: relative;
   top: 14px;
   left: 10px;
@@ -48,7 +53,6 @@ span.text-logo {
   font-size: 32px;
   line-height: 20px;
   letter-spacing: -0.015em;
-  color: rgba(0, 0, 0, 0.75);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -86,18 +90,12 @@ span.text-logo {
 }
 
 .primary-button {
-  border-radius: 8px;
-  display: inline-block;
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 17px;
-  line-height: 21px;
   background: var(--primary);
   padding: 12px 25px;
   margin: 20px 20px;
   color: white;
-  text-decoration: none;
   transition: 500ms all ease-in-out;
 }
 
@@ -167,10 +165,20 @@ img.line-breaker {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+
+  .img-features {
+    left: 45px;
+  }
 }
 
 /* Media Query Laptop */
 @media (min-width: 768px) and (max-width: 992px) {
+  h3,
+  h3.text-end,
+  p,
+  p.text-end {
+    text-align: center !important;
+  }
   .col-md-6 {
     width: 100%;
   }
@@ -190,6 +198,15 @@ img.line-breaker {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .flexible-grid.reverse {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .img-features {
+    left: 50px;
   }
 }
 
