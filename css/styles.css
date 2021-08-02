@@ -57,7 +57,7 @@ span.text-logo {
 }
 
 .navbar {
-  box-shadow: 0px 4px 250px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
 }
 .navbar-brand {
   margin-right: 2rem;
@@ -167,7 +167,7 @@ img.line-breaker {
   }
 
   .img-features {
-    left: 45px;
+    left: 20px;
   }
 }
 
