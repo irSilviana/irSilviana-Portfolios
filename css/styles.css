@@ -5,8 +5,11 @@ font-family: 'Ubuntu', sans-serif; */
 
 :root {
   --primary: #e35073;
+  --link-hover: #3f0f0f;
   --primary-background: #faeff1;
   --dark-font: rgba(0, 0, 0, 0.75);
+  --slow-transition: 300ms all ease-in-out;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -53,7 +56,7 @@ span.text-logo {
   font-size: 32px;
   line-height: 20px;
   letter-spacing: -0.015em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: var(--shadow);
 }
 
 .navbar {
@@ -72,6 +75,10 @@ span.text-logo {
   padding-left: 60px;
 }
 
+.nav-link:hover {
+  color: var(--link-hover);
+  text-decoration: overline;
+}
 .hero {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -96,11 +103,12 @@ span.text-logo {
   padding: 12px 25px;
   margin: 20px 20px;
   color: white;
-  transition: 500ms all ease-in-out;
+  transition: var(--slow-transition);
 }
 
 .primary-button:hover {
-  color: white;
+  color: var(--link-hover);
+  font-weight: 500;
   transform: scale(1.1);
 }
 
@@ -128,11 +136,19 @@ img.line-breaker {
 }
 
 .img-features {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: var(--shadow);
   border-radius: 15px;
   max-width: 80%;
   position: relative;
   right: -35px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: var(--slow-transition);
+}
+
+.img-features:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 
 @media (min-width: 576px) and(max-width: 720px) {
@@ -217,6 +233,7 @@ img.line-breaker {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
+
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
