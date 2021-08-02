@@ -51,8 +51,12 @@ span.text-logo {
     line-height: 20px;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    position: relative;
-    right: -300px;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
   }
 
   .nav-link.active {
