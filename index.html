@@ -43,7 +43,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/" title="Homepage">
           <img
             src="/images/Logo-color.png"
             alt="isSilviana logo"
@@ -66,15 +66,60 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link" href="/portfolios.html">Portfolios</a>
-            <a class="nav-link" href="/contact.html">Work Inquiry</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/"
+              title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html" title="About">About</a>
+            <a class="nav-link" href="/portfolios.html" title="Portfolios"
+              >Portfolios</a
+            >
+            <a class="nav-link" href="/contact.html" title="Contact"
+              >Work Inquiry</a
+            >
           </div>
         </div>
       </div>
     </nav>
 
-    <h1>HOME PAGE</h1>
+    <section class="hero">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <img
+                src="/images/hero-image.png"
+                alt="nwl page"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1>Irfani Silviana</h1>
+            <h2>
+              Web Designer
+              <br />
+              Frontend React Developer
+            </h2>
+            <div class="hero-button">
+              <div>
+                <a
+                  href="/contact.html"
+                  title="Contact Me"
+                  class="primary-button"
+                  >Contact Me</a
+                >
+                <a href="/about.html" title="About Me" class="primary-button"
+                  >About Me</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
