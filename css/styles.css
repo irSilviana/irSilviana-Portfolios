@@ -6,7 +6,7 @@ font-family: 'Ubuntu', sans-serif; */
 :root {
   --primary: #e35073;
   --link-hover: #3f0f0f;
-  --primary-background: #faeff1;
+  --primary-background: rgba(250, 239, 241, 0.48);
   --dark-font: rgba(0, 0, 0, 0.75);
   --slow-transition: 300ms all ease-in-out;
   --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -43,6 +43,14 @@ h2 {
   font-size: 28px;
   line-height: 58px;
   letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
 }
 
 span.text-logo {
@@ -149,6 +157,49 @@ img.line-breaker {
 .img-features:hover {
   -webkit-filter: none;
   filter: none;
+}
+
+.about-hero {
+  background-color: #3d1f26;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-hero h1,
+.about-hero h2 {
+  color: white;
+}
+
+.about {
+  margin: 100px auto;
+}
+.profile-photo {
+  display: block;
+  border-radius: 300px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.skill {
+  background-color: var(--primary-background);
+  margin: 100px auto;
+  padding: 100px;
+}
+
+.skill h3 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.education {
+  margin: 100px auto;
+}
+
+.education-block {
+  background-image: url(/images/Rectangle-medium.png);
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 70px;
 }
 
 @media (min-width: 576px) and(max-width: 720px) {
