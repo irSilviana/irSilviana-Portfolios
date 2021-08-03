@@ -20,7 +20,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+li {
   color: var(--dark-font);
 }
 
@@ -67,6 +68,9 @@ span.text-logo {
   text-shadow: var(--shadow);
 }
 
+li {
+  list-style: none;
+}
 .navbar {
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
 }
@@ -116,6 +120,22 @@ span.text-logo {
 
 .primary-button:hover {
   color: var(--link-hover);
+  font-weight: 500;
+  transform: scale(1.1);
+}
+
+.secondary-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border: 1px solid var(--primary);
+  padding: 12px 25px;
+  margin: 20px 20px;
+  color: var(--primary);
+  transition: var(--slow-transition);
+}
+
+.secondary-button:hover {
+  color: var(--primary);
   font-weight: 500;
   transform: scale(1.1);
 }
@@ -192,7 +212,12 @@ img.line-breaker {
 }
 
 .education {
-  margin: 100px auto;
+  margin: 100px 50px;
+  background-image: url(/images/undraw_researching.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 40%;
+  background-position-x: right;
 }
 
 .education-block {
@@ -200,6 +225,20 @@ img.line-breaker {
   background-repeat: no-repeat;
   background-position-x: 130px;
   background-position-y: 70px;
+}
+
+.certification-block {
+  background-image: url(/images/Rectangle-short.png);
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+  background-position-y: -80px;
+}
+
+.language-block {
+  background-image: url(/images/Rectangle-short.png);
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
 }
 
 @media (min-width: 576px) and(max-width: 720px) {
