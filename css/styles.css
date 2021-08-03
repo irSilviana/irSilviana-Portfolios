@@ -74,6 +74,12 @@ span.text-logo {
 li {
   list-style: none;
 }
+
+img.line-breaker {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 130px;
+}
 .navbar {
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
 }
@@ -149,15 +155,9 @@ li {
   padding-top: 50px;
   padding-bottom: 100px;
 }
-img.line-breaker {
-  display: block;
-  margin: 0 auto 50px auto;
-  width: 130px;
-}
 
 .features {
   padding-top: 50px;
-  padding-bottom: 100px;
 }
 
 .flexible-grid {
@@ -181,6 +181,10 @@ img.line-breaker {
 .img-features:hover {
   -webkit-filter: none;
   filter: none;
+}
+
+.toTop {
+  padding-bottom: 70px;
 }
 
 .toTop a {
@@ -234,6 +238,7 @@ img.line-breaker {
   color: var(--footer-text);
   line-height: 60px;
 }
+
 .about-hero {
   background-color: #3d1f26;
   padding-top: 100px;
@@ -248,6 +253,7 @@ img.line-breaker {
 .about {
   margin: 100px auto;
 }
+
 .profile-photo {
   display: block;
   border-radius: 300px;
