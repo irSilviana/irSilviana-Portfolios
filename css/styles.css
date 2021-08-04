@@ -318,6 +318,7 @@ img.line-breaker {
   p,
   p.text-end {
     text-align: center !important;
+    padding: 0 20px;
   }
   h1 {
     font-size: 58px;
@@ -328,12 +329,29 @@ img.line-breaker {
     font-size: 25px;
     line-height: 42px;
   }
+
+  .about p {
+    font-size: 14px;
+    padding: 0px 35px;
+  }
+
+  .skill h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0;
+  }
+
   .hero .img-fluid {
     margin-left: 2px;
   }
   .primary-button {
     padding: 12px 11px;
     margin: 20px 5px;
+  }
+  .about-hero .primary-button {
+    display: block;
   }
   .flexible-grid.reverse {
     display: flex;
@@ -345,10 +363,45 @@ img.line-breaker {
   .img-features {
     left: 20px;
   }
+
+  .profile-photo {
+    margin: 20px auto;
+    max-width: 70%;
+  }
+
+  .education {
+    background-size: 100%;
+  }
+
+  .education-block {
+    background-position-x: -12px;
+  }
+
+  .certification-block {
+    background-position-x: -15px;
+  }
+  .language-block {
+    background-position-x: -10px;
+  }
+
+  .secondary-button {
+    background: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    margin: 10px 0px 80px;
+  }
 }
 
 /* Media Query Laptop */
 @media (min-width: 768px) and (max-width: 992px) {
+  .about p {
+    padding: 0 20px;
+  }
+
+  .skill h3 {
+    line-height: 25px;
+    margin-top: 15px;
+  }
   .col-md-6 {
     width: 100%;
   }
@@ -366,6 +419,19 @@ img.line-breaker {
 
   .img-features {
     left: 50px;
+  }
+
+  .profile-photo {
+    margin: 20px auto;
+    max-width: 55%;
+  }
+
+  .education-block {
+    background-position-x: 70px;
+  }
+
+  .img-fluid {
+    max-width: 165%;
   }
 }
 
