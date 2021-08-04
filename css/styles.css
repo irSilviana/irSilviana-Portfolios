@@ -357,6 +357,14 @@ img.line-breaker {
     padding: 0;
   }
 
+  .hero {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  .hero-image {
+    padding: 135px 100px;
+  }
   .hero .img-fluid {
     margin-left: 2px;
   }
@@ -419,6 +427,11 @@ img.line-breaker {
   .col-md-6 {
     width: 100%;
   }
+
+  .hero-image {
+    background-size: 90%;
+  }
+
   .hero .row {
     display: flex;
     flex-wrap: wrap;
@@ -445,7 +458,7 @@ img.line-breaker {
   }
 
   .img-fluid {
-    max-width: 165%;
+    max-width: 65%;
   }
 }
 
