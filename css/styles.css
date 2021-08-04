@@ -335,7 +335,7 @@ img.line-breaker {
   text-align: center;
   margin: 0 auto;
   padding-right: 70px;
-  height: 350px;
+  height: 250px;
   width: 100%;
   border-radius: 5px;
   border: 1px solid #0000000a;
@@ -451,9 +451,23 @@ img.line-breaker {
     padding: 10px 25px;
     margin: 10px 0px 80px;
   }
+
+  .project-item div.img-container {
+    padding-right: 35px;
+    height: 185px;
+  }
+
+  h3,
+  h3.text-end,
+  p,
+  p.text-end {
+    text-align: center !important;
+    padding: 0 20px;
+    line-height: 25px;
+  }
 }
 
-/* Media Query Laptop */
+/* Media Query Tablet & Laptop */
 @media (min-width: 768px) and (max-width: 992px) {
   .about p {
     padding: 0 20px;
@@ -483,6 +497,10 @@ img.line-breaker {
     align-items: center;
   }
 
+  .portfolios .primary-button {
+    margin: 20px auto;
+  }
+
   .img-features {
     left: 50px;
   }
@@ -493,11 +511,41 @@ img.line-breaker {
   }
 
   .education-block {
-    background-position-x: 70px;
+    background-position-x: 100px;
   }
 
-  .img-fluid {
-    max-width: 65%;
+  .certification-block {
+    background-position-x: 55px;
+  }
+
+  .education .img-fluid {
+    max-width: 150%;
+    padding-top: 70px;
+  }
+
+  .projects h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .projects p,
+  .projects li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .projects strong {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .projects .img-features {
+    left: 0px;
+    max-width: 100%;
+  }
+
+  .projects .project-item div.img-container {
+    padding-right: 0px;
   }
 }
 
