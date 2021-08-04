@@ -253,7 +253,7 @@ img.line-breaker {
 
 .footer p {
   color: var(--footer-text);
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .about-hero {
