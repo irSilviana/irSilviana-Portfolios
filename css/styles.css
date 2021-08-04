@@ -149,6 +149,7 @@ img.line-breaker {
 }
 
 .secondary-button {
+  background: white;
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   border: 1px solid var(--primary);
@@ -355,6 +356,12 @@ img.line-breaker {
   list-style-type: disc;
 }
 
+.btn-check-github {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (min-width: 576px) and(max-width: 720px) {
   .flexible-grid.reverse {
     display: flex;
@@ -464,6 +471,11 @@ img.line-breaker {
     text-align: center !important;
     padding: 0 20px;
     line-height: 25px;
+  }
+
+  .btn-check-github .secondary-button {
+    margin: 0;
+    font-size: 12px;
   }
 }
 
