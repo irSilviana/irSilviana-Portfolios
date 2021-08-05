@@ -9,7 +9,7 @@ font-family: 'Ubuntu', sans-serif; */
   --link-hover: #551414;
   --primary-background: rgba(250, 239, 241, 0.48);
   --footer-background: #3d1f26;
-  --footer-text: #dddddd;
+  --footer-text: #c5c5c5;
   --dark-font: rgba(0, 0, 0, 0.75);
   --fast-transition: 300ms all ease-in-out;
   --slow-transition: 1000ms all ease-in-out;
