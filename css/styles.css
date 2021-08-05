@@ -9,7 +9,7 @@ font-family: 'Ubuntu', sans-serif; */
   --link-hover: #551414;
   --primary-background: rgba(250, 239, 241, 0.48);
   --footer-background: #3d1f26;
-  --footer-text: #e5e5e5;
+  --footer-text: #dddddd;
   --dark-font: rgba(0, 0, 0, 0.75);
   --fast-transition: 300ms all ease-in-out;
   --slow-transition: 1000ms all ease-in-out;
@@ -260,6 +260,11 @@ button.primary-button {
   color: var(--footer-text);
   font-size: 36px;
   line-height: 60px;
+  margin-right: 5px;
+}
+
+.footer .icons i:hover {
+  color: white;
 }
 
 .footer p {
