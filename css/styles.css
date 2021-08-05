@@ -488,6 +488,11 @@ button.primary-button {
     margin: 0;
     font-size: 12px;
   }
+
+  .message .secondary-button {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* Media Query Tablet & Laptop */
