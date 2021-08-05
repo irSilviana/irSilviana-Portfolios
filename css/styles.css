@@ -58,6 +58,9 @@ h3 {
   line-height: 50px;
 }
 
+ol li {
+  list-style: number;
+}
 span.text-logo {
   color: var(--dark-font);
   position: relative;
@@ -142,6 +145,10 @@ img.line-breaker {
   transition: var(--fast-transition);
 }
 
+button.primary-button {
+  margin: 0 auto;
+}
+
 .primary-button:hover {
   color: var(--link-hover);
   font-weight: 500;
@@ -165,13 +172,16 @@ img.line-breaker {
   transform: scale(1.1);
 }
 
+/* Section */
 .services,
-.projects {
+.projects,
+.message {
   background: var(--primary-background);
   padding-top: 50px;
   padding-bottom: 100px;
 }
 
+/* Section */
 .features {
   padding-top: 50px;
 }
@@ -326,7 +336,8 @@ img.line-breaker {
   justify-content: flex-end;
 }
 
-.project-item {
+.project-item,
+.message-row {
   background-color: white;
   border-radius: 10px;
   padding: 20px 0;
@@ -509,7 +520,8 @@ img.line-breaker {
     align-items: center;
   }
 
-  .portfolios .primary-button {
+  .portfolios .primary-button,
+  .contact .primary-button {
     margin: 20px auto;
   }
 
