@@ -156,9 +156,40 @@
                   />
                 </div>
                 <!-- Selection -->
-                <p>What you need:</p>
+                <!-- <p>
+                  <label class="form-label select-label"
+                    >Choose your selection of service(s)</label
+                  >
+                </p> -->
 
-                <div class="mb-3">
+                <select
+                  class="form-select mb-3"
+                  size="7"
+                  multiple
+                  aria-label="Select the service"
+                >
+                  <option selected>Choose your selection of service(s)</option>
+                  <option name="company-profile" value="company-profile">
+                    Company Profile
+                  </option>
+                  <option name="web-design" value="web-design">
+                    Web Design
+                  </option>
+                  <option name="portfolio-site" value="portfolio-site">
+                    Portfolio Site
+                  </option>
+                  <option name="wordpress" value="wordpress">
+                    WordPress CMS
+                  </option>
+                  <option name="online-store" value="online-store">
+                    Online Store
+                  </option>
+                  <option name="landing-page" value="landing-page">
+                    Landing Page
+                  </option>
+                </select>
+
+                <!-- <div class="mb-3">
                   <div class="form-check form-check-inline">
                     <input
                       class="form-check-input"
@@ -233,7 +264,7 @@
                       >Landing Page</label
                     >
                   </div>
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                   <input
@@ -250,7 +281,7 @@
                     class="form-control"
                     id="Textarea"
                     name="message"
-                    rows="5 "
+                    rows="7"
                     placeholder="Message"
                   ></textarea>
                 </div>
