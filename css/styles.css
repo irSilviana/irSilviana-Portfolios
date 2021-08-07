@@ -272,6 +272,18 @@ button.primary-button {
   line-height: 40px;
 }
 
+.footer-message p,
+.footer-message span,
+.footer-message a {
+  color: var(--footer-text);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.footer-message a:hover {
+  color: white;
+}
+
 .about-hero {
   background-color: #3d1f26;
   padding-top: 100px;
