@@ -123,9 +123,13 @@
                 action="/success.html"
                 name="contact"
                 method="POST"
+                netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
                 data-netlify="true"
                 class="mt-3"
               >
+                <input type="text" name="bot-field" hidden />
+
                 <div class="mb-3">
                   <input
                     type="text"
@@ -238,6 +242,8 @@
                     placeholder="Message"
                   ></textarea>
                 </div>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <div style="direction: rtl">
                   <button type="submit" class="btn primary-button">
