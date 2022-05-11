@@ -127,6 +127,14 @@ img.line-breaker {
   margin-left: 20px;
 }
 
+.animation {
+  margin-bottom: -30%;
+}
+
+.animation img {
+  max-width: 80%;
+}
+
 .hero-button {
   display: flex;
   flex-direction: row;
@@ -430,6 +438,11 @@ button.primary-button {
   .hero .img-fluid {
     margin-left: 2px;
   }
+
+  .animation {
+    margin-top: 30%;
+  }
+
   .primary-button {
     padding: 12px 11px;
     margin: 20px 5px;
@@ -445,7 +458,7 @@ button.primary-button {
   }
 
   .img-features {
-    left: 20px;
+    left: 10px;
   }
 
   .profile-photo {
